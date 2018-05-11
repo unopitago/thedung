@@ -1,0 +1,323 @@
+/*----------------------------------------*/
+/* Template default CSS
+/*----------------------------------------*/
+html,
+body {
+  height: 100%;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #40424a;
+  margin: 0;
+  font-weight: 600;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 18px;
+  color: #808181;
+  line-height: 1.8;
+}
+
+img {
+  max-width: 100%;
+}
+
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+  outline: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+/*---------------------
+	Helper CSS
+-----------------------*/
+.spad {
+  padding-top: 125px;
+  padding-bottom: 110px;
+}
+
+.section-title h2 {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 110px;
+  padding-bottom: 2px;
+  line-height: normal;
+}
+
+.section-title h2:after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background: #40424a;
+}
+
+.set-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ===========================
+  Responsive
+==============================*/
+@media only screen and (max-width: 1730px) {
+  .home-two-style .social-section .social-link-warp:after {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .hero-text h2 {
+    font-size: 118px;
+  }
+}
+
+@media only screen and (max-width: 1450px) {
+  .home-five-style .header-section {
+    position: relative;
+    background: #f2f7f8;
+  }
+  .home-six-style .header-section {
+    position: relative;
+    background: #009fff;
+  }
+}
+
+@media only screen and (max-width: 1366px) and (min-width: 1200px) {
+  .home-five-style .header-section {
+    position: relative;
+    background: #f2f7f8;
+  }
+  .container-warp {
+    min-width: 80%;
+    margin-left: 10%;
+  }
+  .hero-info ul li span {
+    min-width: 180px;
+  }
+  .portfolio-item .port-pic {
+    height: 310px;
+  }
+  .home-three-style .header-section {
+    padding: 50px 30px;
+  }
+  .home-three-style .main-left-area {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .home-three-style .main-right-area {
+    padding-left: 100px;
+  }
+}
+
+/* Medium screen : 992px. */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .portfolio-warp {
+    padding: 0;
+  }
+  .home-three-style .header-section {
+    padding: 50px 15px;
+  }
+  .home-three-style .main-left-area {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .home-three-style .main-right-area {
+    padding-left: 50px;
+  }
+  .home-three-style .main-right-area {
+    padding-left: 100px;
+  }
+  .portfolio-item .port-pic {
+    height: 310px;
+  }
+  .portfolio-item {
+    margin-bottom: 30px;
+  }
+}
+
+/* Tablet :768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .portfolio-warp {
+    padding: 0;
+  }
+  .hidden-md {
+    display: none !important;
+  }
+  .icon-box {
+    margin-right: 30px;
+  }
+  .social-section .social-links {
+    display: block;
+    text-align: center;
+  }
+  .social-link-warp:after {
+    display: none;
+  }
+  .portfolio-item {
+    margin-bottom: 30px;
+  }
+  .home-three-style .header-section {
+    position: relative;
+    background: #f2f7f8;
+  }
+  .home-three-style .main-left-area {
+    padding-top: 0;
+  }
+  .home-three-style .main-left-area,
+  .home-three-style .header-section,
+  .home-three-style .main-right-area,
+  .home-four-style .main-left-area,
+  .home-four-style .header-section,
+  .home-four-style .main-right-area {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .home-five-style .header-section,
+  .home-six-style .header-section {
+    padding: 50px 0;
+  }
+  .info-section .hero-info ul li span {
+    color: #9c9b9b;
+  }
+  .hero-info ul li {
+    margin-bottom: 30px;
+  }
+  .hero-info ul li span {
+    display: block;
+  }
+}
+
+/* Large Mobile :480px. */
+@media only screen and (max-width: 767px) {
+  .icon-box {
+    margin-right: 30px;
+    text-align: left;
+  }
+  .hero-text h2 {
+    font-size: 80px;
+  }
+  .portfolio-warp {
+    padding: 0;
+  }
+  .hidden-md {
+    display: none !important;
+  }
+  .resume-list {
+    margin-left: 0;
+    padding-left: 0;
+    border-left: none;
+  }
+  .review-slider {
+    padding-left: 0;
+  }
+  .review-slider .owl-dots {
+    position: relative;
+    left: 0;
+    top: 70px;
+  }
+  .review-slider .owl-dots .owl-dot {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  .portfolio-item {
+    margin-bottom: 30px;
+  }
+  .fact-box {
+    margin-bottom: 30px;
+  }
+  .header-section {
+    padding: 50px 0;
+  }
+  .social-section .social-links {
+    display: block;
+    text-align: center;
+  }
+  .home-three-style .header-section {
+    position: relative;
+    background: #f2f7f8;
+  }
+  .home-three-style .main-left-area {
+    padding-top: 0;
+  }
+  .home-three-style .main-left-area,
+  .home-three-style .header-section,
+  .home-three-style .main-right-area,
+  .home-four-style .main-left-area,
+  .home-four-style .header-section,
+  .home-four-style .main-right-area {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .home-five-style .header-section,
+  .home-six-style .header-section {
+    padding: 50px 0;
+  }
+  .info-section .hero-info ul li span {
+    color: #9c9b9b;
+  }
+}
+
+/* small Mobile :320px. */
+@media only screen and (max-width: 479px) {
+  .hero-text h2 {
+    font-size: 50px;
+  }
+  .hero-info ul li {
+    font-size: 18px;
+  }
+  .hero-info ul li span {
+    display: block;
+  }
+  .social-section .social-links a {
+    margin-right: 30px;
+  }
+  .resume-list h2 {
+    font-size: 50px;
+  }
+  .portfolio-item {
+    margin-bottom: 30px;
+  }
+  .home-three-style .main-left-area,
+  .home-three-style .header-section,
+  .home-three-style .main-right-area,
+  .home-four-style .main-left-area,
+  .home-four-style .header-section,
+  .home-four-style .main-right-area {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .home-four-style .main-left-area {
+    padding-top: 250px;
+  }
+}
