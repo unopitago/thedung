@@ -12,11 +12,13 @@ import Portfolio from "./Portfolio/Portfolio"
 import Extra from "./Extra/Extra"
 import Thanks from "./Thanks/Thanks"
 import Footer from "./Footer/Footer"
+import Preloder from './Preloder/Preloder'
 
 class App extends Component {
     render() {
         return (
             <div className="home-two-style">
+                <Preloder/>
                 <Header/>
                 <Hero/>
                 <Social/>
