@@ -9,7 +9,7 @@ class Preloder extends React.Component {
             $("#preloder").delay(400).fadeOut("slow");
         });
     }
-    
+
     render() {
         return (
             <div id="preloder">
